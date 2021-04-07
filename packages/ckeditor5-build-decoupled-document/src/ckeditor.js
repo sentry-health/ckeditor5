@@ -39,6 +39,8 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
+import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 
 export default class DecoupledEditor extends DecoupledEditorBase {}
 
@@ -76,7 +78,9 @@ DecoupledEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	HtmlEmbed,
+	Base64UploadAdapter,
 ];
 
 // Editor configuration.
@@ -104,36 +108,29 @@ DecoupledEditor.defaultConfig = {
 			'indent',
 			'|',
 			'link',
+			'htmlEmbed',
 			'blockquote',
 			'uploadImage',
 			'insertTable',
 			'mediaEmbed',
 			'|',
 			'undo',
-			'redo'
-		]
+			'redo',
+		],
 	},
 	image: {
-		styles: [
-			'full',
-			'alignLeft',
-			'alignRight'
-		],
+		styles: ['full', 'alignLeft', 'alignRight'],
 		toolbar: [
 			'imageStyle:alignLeft',
 			'imageStyle:full',
 			'imageStyle:alignRight',
 			'|',
-			'imageTextAlternative'
-		]
+			'imageTextAlternative',
+		],
 	},
 	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
+		contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells'],
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'en',
 };
