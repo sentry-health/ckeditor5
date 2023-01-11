@@ -6,6 +6,7 @@
 // The editor creator to use.
 import DecoupledEditorBase from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
 
+import AutoImage from '@ckeditor/ckeditor5-image/src/autoimage';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
@@ -46,6 +47,7 @@ export default class DecoupledEditor extends DecoupledEditorBase {}
 
 // Plugins to include in the build.
 DecoupledEditor.builtinPlugins = [
+	AutoImage,
 	Essentials,
 	Alignment,
 	FontSize,
@@ -110,7 +112,6 @@ DecoupledEditor.defaultConfig = {
 			'link',
 			'htmlEmbed',
 			'blockquote',
-			'uploadImage',
 			'insertTable',
 			'mediaEmbed',
 			'|',
