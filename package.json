@@ -1,7 +1,7 @@
 {
-  "name": "@ckeditor/ckeditor5-build-decoupled-document",
-  "version": "27.0.0",
-  "description": "The document editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "name": "@sentry-health/ckeditor",
+  "version": "1.0.6",
+  "description": "Custom CKEditor build for Sentry Health.",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
