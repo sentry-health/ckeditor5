@@ -1,6 +1,6 @@
 {
   "name": "@sentry-health/ckeditor",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Custom CKEditor build for Sentry Health.",
   "keywords": [
     "ckeditor5-build",
