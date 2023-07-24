@@ -68,6 +68,7 @@ class Adapter {
 		 * @member {module:upload/filerepository~FileLoader} #loader
 		 */
 		this.loader = loader;
+		this.imageHelper = new ImageHelper();
 	}
 
 	/**
