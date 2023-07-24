@@ -1,6 +1,6 @@
 {
   "name": "@sentry-health/ckeditor",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Custom CKEditor build for Sentry Health.",
   "keywords": [
     "ckeditor5-build",
@@ -46,7 +46,8 @@
     "@ckeditor/ckeditor5-paragraph": "^27.0.0",
     "@ckeditor/ckeditor5-paste-from-office": "^27.0.0",
     "@ckeditor/ckeditor5-table": "^27.0.0",
-    "@ckeditor/ckeditor5-typing": "^27.0.0"
+    "@ckeditor/ckeditor5-typing": "^27.0.0",
+    "browser-image-compression": "^2.0.2"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^27.0.0",
