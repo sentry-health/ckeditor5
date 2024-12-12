@@ -11,7 +11,7 @@
 
 import ImageHelper from './imageCompressor';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import FileRepository from '../filerepository';
+import FileRepository from '@ckeditor/ckeditor5-upload/src/filerepository';
 
 
 /**
